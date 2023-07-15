@@ -1,0 +1,157 @@
+/** Body background color */
+body {
+  background-color: #333;
+}
+
+/** Various examples of border application */
+.box-examples {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.box {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+  background-color: coral;
+  border: 0.75rem groove gray; /** border: width style color; */
+}
+
+.box--1 {
+  border-width: 5px; /** border-width: top right bottom left; */
+  border-style: dotted; /** border-style: top right bottom left; */
+}
+
+.box--2 {
+  border-style: dashed;
+  border-color: lightslategray;
+}
+
+.box--3 {
+  border-top: 0.75rem solid brown;
+  border-right: 0.5rem dashed honeydew;
+  border-bottom: 0.5rem double black;
+  border-left: 0.5rem dotted steelblue;
+}
+
+.box--4 {
+  border-top-width: 1.25rem;
+  border-top-style: double;
+  border-top-color: crimson;
+  border-right-width: 1.25rem;
+  border-right-style: double;
+  border-right-color: darkred;
+  border-bottom-width: 1.25rem;
+  border-bottom-style: double;
+  border-bottom-color: crimson;
+  border-left-width: 1.25rem;
+  border-left-style: double;
+  border-left-color: darkred;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(59, 130, 246);
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/** Border example on image */
+.img {
+  display: block;
+  width: 25rem;
+  margin: 2rem auto; /** Horizontal centering with display: block on inline images */
+  border: 1.25rem groove lightblue; /* Groove border style with a raised appearance */
+  border-radius: 32px 16px 24px 2px;
+  border-top-color: lightcoral;
+  border-bottom-color: lightgreen;
+}
+
+/** Example of "gradient border" (not covered in the course) */
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem auto;
+  background: linear-gradient(
+    to left,
+    rgb(153, 27, 27),
+    rgb(202, 138, 4),
+    rgb(234, 179, 8)
+  );
+  border-radius: 1rem;
+}
+
+.container__img {
+  display: block;
+  width: 23.5rem;
+  height: 23.5rem;
+  border-radius: 1rem;
+}
+
+/** Border example on profile card */
+.card {
+  width: 25rem;
+  height: auto;
+  margin: 0.75rem auto;
+  padding: 1.25rem;
+  background: linear-gradient(
+    to left,
+    rgb(92, 196, 130),
+    rgb(59, 130, 246),
+    rgb(147, 51, 234)
+  );
+  border: 0.5rem solid #fff;
+  border-radius: 1rem;
+}
+
+.card__img {
+  display: block;
+  width: 15rem;
+  height: 15rem;
+  margin: 5rem auto 3rem;
+  padding: 2px;
+  border: 0.5rem solid transparent;
+  border-radius: 50%;
+  box-shadow: 10px 6px 62px -15px rgb(83, 66, 92);
+  object-fit: cover; /* Prevents image distortion */
+}
+
+.card__h3 {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.card__a {
+  display: block;
+  width: 10rem;
+  margin: 1rem auto 2rem;
+  padding: 1rem 0rem;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: darkslategray;
+  background-color: #64dfdf;
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.25rem 0.75rem gray;
+}
